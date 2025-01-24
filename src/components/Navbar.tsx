@@ -1,4 +1,3 @@
-import { Heart } from 'lucide-react';
 import yukktaLogo from '../assets/yukkta Logo.png';
 
 interface NavbarProps {

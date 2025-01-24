@@ -104,13 +104,19 @@ function App() {
                 Experience seamless healthcare delivery with cutting-edge technology and personalized care, right at your fingertips.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-medium hover:shadow-lg transition-all duration-300">
+                <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
                   <Apple className="w-6 h-6 mr-2" />
-                  App Store
+                  <div className='flex flex-col items-start'>
+                    <p>App Store</p>
+                    <p>comming soon....</p>
+                  </div>
                 </button>
                 <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
                   <PlayCircle className="w-6 h-6 mr-2" />
-                  Play Store
+                  <div className='flex flex-col items-start'>
+                    <p>Play Store</p>
+                    <p>comming soon....</p>
+                  </div>
                 </button>
               </div>
             </div>

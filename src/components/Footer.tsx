@@ -1,36 +1,37 @@
 import { Heart, Facebook, Twitter, Instagram, Mail, Apple, PlayCircle } from 'lucide-react';
+import yukktaLogo from '../assets/yukkta Logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 pt-20 pb-10">
+    <footer className="bg-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-gray-800">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-gray-200">
           <div className="md:col-span-4 space-y-8">
             <div className="flex items-center space-x-3">
-              <Heart className="w-10 h-10 text-primary" />
-              <span className="text-3xl font-bold text-white">Yukkta</span>
+              <img src={yukktaLogo} alt="yukkta logo" className="w-10 h-10 text-blue-600"/>
+              <span className="text-3xl font-bold text-gray-900">Yukkta</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Revolutionizing healthcare through innovative technology and accessibility. Join us in our mission to make quality healthcare available to everyone, everywhere.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="footer-social-link" aria-label="Facebook">
-                <Facebook className="w-5 h-5 text-white" />
+                <Facebook className="w-5 h-5 text-gray-900" />
               </a>
               <a href="#" className="footer-social-link" aria-label="Twitter">
-                <Twitter className="w-5 h-5 text-white" />
+                <Twitter className="w-5 h-5 text-gray-900" />
               </a>
               <a href="#" className="footer-social-link" aria-label="Instagram">
-                <Instagram className="w-5 h-5 text-white" />
+                <Instagram className="w-5 h-5 text-gray-900" />
               </a>
               <a href="#" className="footer-social-link" aria-label="Email">
-                <Mail className="w-5 h-5 text-white" />
+                <Mail className="w-5 h-5 text-gray-900" />
               </a>
             </div>
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold text-white mb-6">Company</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">Company</h3>
             <ul className="space-y-4">
               <li><a href="#about" className="footer-link">About Us</a></li>
               <li><a href="#careers" className="footer-link">Careers</a></li>
@@ -40,7 +41,7 @@ const Footer = () => {
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold text-white mb-6">Support</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">Support</h3>
             <ul className="space-y-4">
               <li><a href="#help" className="footer-link">Help Center</a></li>
               <li><a href="#safety" className="footer-link">Safety Center</a></li>
@@ -50,7 +51,7 @@ const Footer = () => {
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold text-white mb-6">Legal</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">Legal</h3>
             <ul className="space-y-4">
               <li><a href="#privacy" className="footer-link">Privacy Policy</a></li>
               <li><a href="#terms" className="footer-link">Terms of Service</a></li>
@@ -59,35 +60,31 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:col-span-2">
-            <h3 className="text-lg font-semibold text-white mb-6">Download</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="#" className="inline-flex items-center px-4 py-2 bg-white rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                  <Apple className="w-6 h-6 text-gray-900" />
-                  <div className="ml-3">
-                    <div className="text-xs text-gray-600">Download on the</div>
-                    <div className="text-sm font-semibold text-gray-900">App Store</div>
+          <div className="md:col-span-2 flex flex-col justify-start items-start">
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">Download</h3>
+            <div className="flex flex-col sm:flex-col gap-4">
+                <button className="inline-flex items-center px-8 py-4 border-2 border-black text-black rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
+                  <Apple className="w-6 h-6 mr-2" />
+                  <div className='flex flex-col items-start'>
+                    <p>App Store</p>
+                    <p>comming soon....</p>
                   </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="inline-flex items-center px-4 py-2 bg-white rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                  <PlayCircle className="w-6 h-6 text-gray-900" />
-                  <div className="ml-3">
-                    <div className="text-xs text-gray-600">Get it on</div>
-                    <div className="text-sm font-semibold text-gray-900">Google Play</div>
+                </button>
+                <button className="inline-flex items-center px-8 py-4 border-2 border-black text-black rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
+                  <PlayCircle className="w-6 h-6 mr-2" />
+                  <div className='flex flex-col items-start'>
+                    <p>Play Store</p>
+                    <p>comming soon....</p>
                   </div>
-                </a>
-              </li>
-            </ul>
+                </button>
+              </div>
           </div>
         </div>
 
         <div className="mt-12">
           <div className="text-center">
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Stay Updated</h3>
               <form className="max-w-md mx-auto flex">
                 <input
                   type="email"
@@ -99,7 +96,7 @@ const Footer = () => {
                 </button>
               </form>
             </div>
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-600 text-sm">
               <p className="mb-4">&copy; {new Date().getFullYear()} Yukkta Healthcare Technologies. All rights reserved.</p>
               <p>Made with dedication for better healthcare 🌟</p>
             </div>
