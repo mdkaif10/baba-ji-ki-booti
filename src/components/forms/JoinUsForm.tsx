@@ -86,7 +86,7 @@ const JoinUsForm = () => {
                       />
                     ))}
                   </div>
-                  <span>Join 1000+ doctors</span>
+                  <span>Join other talented doctors</span>
                 </div>
               </div>
             </div>

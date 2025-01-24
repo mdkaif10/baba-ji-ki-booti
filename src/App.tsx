@@ -36,13 +36,13 @@ function App() {
       icon: <Hospital className="w-12 h-12 text-blue-600" />,
       title: "24/7 Doctor Consultations",
       description: "Access to qualified healthcare professionals anytime, anywhere. Direct video consultations and home visits available.",
-      stats: "10,000+ Consultations"
+      stats: "10+ Consultations"
     },
     {
       icon: <Building2 className="w-12 h-12 text-blue-600" />,
       title: "Smart Hostel Care",
       description: "Comprehensive healthcare plans for hostels with regular check-ups, emergency support, and health monitoring.",
-      stats: "500+ Hostels"
+      stats: "50+ Hostels"
     },
     {
       icon: <Ambulance className="w-12 h-12 text-blue-600" />,
@@ -52,39 +52,39 @@ function App() {
     }
   ];
 
-  const stats = [
-    { icon: <Users className="w-8 h-8" />, value: "50,000+", label: "Active Users" },
-    { icon: <Hospital className="w-8 h-8" />, value: "1,000+", label: "Healthcare Partners" },
-    { icon: <Star className="w-8 h-8" />, value: "4.9/5", label: "User Rating" },
-    { icon: <Shield className="w-8 h-8" />, value: "100%", label: "Secure" }
-  ];
+  // const stats = [
+  //   { icon: <Users className="w-8 h-8" />, value: "50,000+", label: "Active Users" },
+  //   { icon: <Hospital className="w-8 h-8" />, value: "1,000+", label: "Healthcare Partners" },
+  //   { icon: <Star className="w-8 h-8" />, value: "4.9/5", label: "User Rating" },
+  //   { icon: <Shield className="w-8 h-8" />, value: "100%", label: "Secure" }
+  // ];
 
-  const services = [
-    {
-      image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      icon: <Stethoscope className="w-8 h-8" />,
-      title: "Primary Care",
-      description: "Comprehensive primary healthcare services with experienced physicians."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      icon: <FirstAid className="w-8 h-8" />,
-      title: "Emergency Care",
-      description: "24/7 emergency medical services with rapid response teams."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      icon: <Microscope className="w-8 h-8" />,
-      title: "Diagnostic Services",
-      description: "Advanced diagnostic facilities with quick result delivery."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      icon: <Activity className="w-8 h-8" />,
-      title: "Specialized Care",
-      description: "Expert specialists for comprehensive medical treatment."
-    }
-  ];
+  // const services = [
+  //   {
+  //     image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //     icon: <Stethoscope className="w-8 h-8" />,
+  //     title: "Primary Care",
+  //     description: "Comprehensive primary healthcare services with experienced physicians."
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //     icon: <FirstAid className="w-8 h-8" />,
+  //     title: "Emergency Care",
+  //     description: "24/7 emergency medical services with rapid response teams."
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //     icon: <Microscope className="w-8 h-8" />,
+  //     title: "Diagnostic Services",
+  //     description: "Advanced diagnostic facilities with quick result delivery."
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //     icon: <Activity className="w-8 h-8" />,
+  //     title: "Specialized Care",
+  //     description: "Expert specialists for comprehensive medical treatment."
+  //   }
+  // ];
 
 
   return (
@@ -132,7 +132,7 @@ function App() {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-white py-16">
+      {/* <div className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -146,10 +146,10 @@ function App() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Services Section */}
-      <div id="services" className="py-24 bg-gray-50">
+      {/* <div id="services" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
@@ -179,7 +179,7 @@ function App() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Features Section */}
       <div id="features" className="py-24 bg-white">
@@ -207,9 +207,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* Join Us Section */}
-      <JoinUsForm/>
 
       {/* About Section */}
       <div id="about" className="py-24 bg-white">
@@ -251,6 +248,11 @@ function App() {
           </div>
         </div>
       </div>
+
+
+      {/* Join Us Section */}
+      <JoinUsForm/>
+
 
       {/* Feedback Section */}
       <FeedbackForm/>
