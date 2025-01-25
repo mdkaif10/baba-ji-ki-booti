@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import { Guitar as Hospital, Building2, Ambulance, Apple, PlayCircle, ChevronRight, Star, Shield, Clock, Users, Stethoscope, ChevronFirst as FirstAid, Microscope, Activity, ArrowRight } from 'lucide-react';
 import Navbar from './components/Navbar';
