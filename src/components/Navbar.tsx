@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <span className={`text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>Yukkta</span>
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#features" className={`nav-link ${isScrolled ? 'text-gray-700' : 'text-white'}`}>Features</a>
+            <a href="#services" className={`nav-link ${isScrolled ? 'text-gray-700' : 'text-white'}`}>Services</a>
             {/* <a href="#services" className={`nav-link ${isScrolled ? 'text-gray-700' : 'text-white'}`}>Services</a> */}
             <a href="#about" className={`nav-link ${isScrolled ? 'text-gray-700' : 'text-white'}`}>About</a>
             <a href="#join" className={`nav-link ${isScrolled ? 'text-gray-700' : 'text-white'}`}>Join Us</a>

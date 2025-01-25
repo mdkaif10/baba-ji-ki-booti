@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import { Guitar as Hospital, Building2, Ambulance, Apple, PlayCircle, ChevronRight, Star, Shield, Clock, Users, Stethoscope, ChevronFirst as FirstAid, Microscope, Activity, ArrowRight } from 'lucide-react';
 import Navbar from './components/Navbar';
@@ -98,10 +99,10 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-white animate-slide-in">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Healthcare Reimagined for the Digital Age
+                Welcome to Yukkta: Bridging Tomorrow's Healthcare with Today's Needs
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8">
-                Experience seamless healthcare delivery with cutting-edge technology and personalized care, right at your fingertips.
+                Experience the future of medical care with Yukkta, your AI-powered healthcare companion.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">
@@ -181,8 +182,55 @@ function App() {
         </div>
       </div> */}
 
-      {/* Features Section */}
-      <div id="features" className="py-24 bg-white">
+      {/* About Section */}
+      <div id="about" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                alt="Medical Team" 
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
+            <div className="scroll-reveal">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Revolutionizing Healthcare Access</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                At Yukkta, we're bridging the gap between healthcare providers and students through innovative technology. Our platform ensures that quality healthcare is accessible, affordable, and efficient for everyone.
+              </p>
+              {/* <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Clock className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-semibold text-gray-900">24/7 Availability</h3>
+                    <p className="text-gray-600">Round-the-clock access to healthcare professionals</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <Shield className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-semibold text-gray-900">Secure Platform</h3>
+                    <p className="text-gray-600">End-to-end encrypted consultations and data protection</p>
+                  </div>
+                </div>
+              </div> */}
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <p className="text-gray-600 mb-4">To make healthcare accessible and affordable for everyone, anytime, anywhere.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                <p className="text-gray-600">Founded by a team of healthcare professionals and tech enthusiasts, Yukkta aims to revolutionize the way healthcare is delivered. Our journey began with a simple idea: to bridge the gap between healthcare providers and those in need through technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      <div id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Comprehensive Healthcare Solutions</h2>
@@ -204,47 +252,6 @@ function App() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* About Section */}
-      <div id="about" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                alt="Medical Team" 
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
-            <div className="scroll-reveal">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Revolutionizing Healthcare Access</h2>
-              <p className="text-xl text-gray-600 mb-8">
-                At Yukkta, we're bridging the gap between healthcare providers and students through innovative technology. Our platform ensures that quality healthcare is accessible, affordable, and efficient for everyone.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <Clock className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">24/7 Availability</h3>
-                    <p className="text-gray-600">Round-the-clock access to healthcare professionals</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <Shield className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">Secure Platform</h3>
-                    <p className="text-gray-600">End-to-end encrypted consultations and data protection</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
